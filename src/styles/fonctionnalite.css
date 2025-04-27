@@ -1,0 +1,264 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+  }
+  
+  .container {
+    padding: 2rem;
+  }
+  
+  .intro {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .subtitle {
+    color: blue;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .intro h1 {
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    font-family: clashdisplay, sans-serif;
+    font-weight: 500;
+  }
+
+ 
+
+  .secondary-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    color: grey;
+    
+    margin-left: 50px;
+    margin-top: 30px;
+    font-family: clashdisplay, sans-serif;
+    font-weight: 500;
+  }
+
+  .secondary-text p {
+    color: blue;
+    margin-right: 0;
+    text-align: right;
+  }
+
+  .secondary-text .arrow {
+    width: 20px;
+    height: 20px;
+    margin-right: auto;
+  }
+  .bus-app-section {
+    position: relative;
+    width: 100%;
+    height: 600px; /* Ajuste la hauteur selon ton besoin */
+    background-image: url('/src/assets/images/slide1.png'); /* ton image de téléphones */
+
+    border-radius: 50px;
+    
+    overflow: hidden;
+    padding: 2rem;
+    color: #000;
+  }
+  
+  .bus-app-section .top-left {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-weight: 400;
+    color: #666;
+    font-family: clashdisplay, sans-serif;
+    font-weight: 500;
+  }
+  
+  .bus-app-section .middle-left {
+    position: absolute;
+    top: 5rem;
+    left: 2rem;
+    font-size: 2.5rem;
+    max-width: 500px;
+    font-family: clashdisplay, sans-serif;  
+  font-weight: 500;
+  }
+  
+  
+  .bus-app-section .bottom-left-link {
+    position: absolute;
+    bottom: 4rem;
+    left: 2rem;
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .bus-app-section .bottom-left-text {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    max-width: 400px;
+  }
+  
+  .bus-app-section .bottom-left-text p {
+    margin-bottom: 1rem;
+    color: black;
+    font-family: clashdisplay, sans-serif;
+    font-weight: 500;
+  }
+  
+  .bus-app-section .bottom-left-text .store-icons {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .bus-app-section .bottom-left-text .store-icons img {
+    width: 40px;
+    height: auto;
+  }
+  
+  .chauffeur-app-section {
+    position: relative;
+    width: 100%;
+    height: 600px; /* Ajuste la hauteur selon ton besoin */
+    background-image: url('/src/assets/images/slide2.webp'); /* ton image de téléphones */
+
+    border-radius: 50px;
+    
+    overflow: hidden;
+    padding: 2rem;
+    color: #000;
+  }
+  
+  .chauffeur-app-section .top-left {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-weight: 400;
+    color: #666;
+    font-family: clashdisplay, sans-serif;
+    font-weight: 500;
+  }
+  
+  .chauffeur-app-section .middle-left {
+    position: absolute;
+    top: 5rem;
+    left: 2rem;
+    font-size: 2.5rem;
+    max-width: 500px;
+    font-family: clashdisplay, sans-serif;  
+  font-weight: 500;
+  }
+  
+  
+  .chauffeur-app-section .bottom-left-link {
+    position: absolute;
+    bottom: 4rem;
+    left: 2rem;
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .chauffeur-app-section .bottom-left-text {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    max-width: 400px;
+  }
+  
+  .chauffeur-app-section .bottom-left-text p {
+    margin-bottom: 1rem;
+    color: black;
+    font-family: clashdisplay, sans-serif;
+    font-weight: 500;
+  }
+  
+  .chauffeur-app-section .bottom-left-text .store-icons {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .chauffeur-app-section .bottom-left-text .store-icons img {
+    width: 40px;
+    height: auto;
+  }
+  
+  .compagnie-app-section {
+    position: relative;
+    width: 100%;
+    height: 600px; /* Ajuste la hauteur selon ton besoin */
+    background-image: url('/src/assets/images/slide3.webp'); /* ton image de téléphones */
+
+    border-radius: 50px;
+    
+    overflow: hidden;
+    padding: 2rem;
+    color: #000;
+  }
+  
+  .compagnie-app-section .top-left {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-weight: 400;
+    color: #666;
+    font-family: clashdisplay, sans-serif;
+    font-weight: 500;
+  }
+  
+  .compagnie-app-section .middle-left {
+    position: absolute;
+    top: 5rem;
+    left: 2rem;
+    font-size: 2.5rem;
+    max-width: 500px;
+    font-family: clashdisplay, sans-serif;  
+  font-weight: 500;
+  }
+  
+  
+  .compagnie-app-section .bottom-left-link {
+    position: absolute;
+    bottom: 4rem;
+    left: 2rem;
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .compagnie-app-section .bottom-left-text {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    max-width: 400px;
+  }
+  
+  .compagnie-app-section .bottom-left-text p {
+    margin-bottom: 1rem;
+    color: black;
+    font-family: clashdisplay, sans-serif;
+    font-weight: 500;
+  }
+  
+  .slideur {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    margin-left: 50px;
+    scrollbar-width: none; /* For Firefox */
+  }
+
+  .slideur::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+  }
+
+  .slideur > div {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+  }

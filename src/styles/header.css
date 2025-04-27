@@ -1,0 +1,173 @@
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/src/assets/fonts/ClashDisplay-Extralight.woff2') format('woff2'),
+       url('/src/assets/fonts/ClashDisplay-Extralight.woff') format('woff'),
+       url('/src/assets/fonts/ClashDisplay-Extralight.ttf') format('truetype');
+  font-weight: 200; /* ExtraLight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/src/assets/fonts/ClashDisplay-Light.woff2') format('woff2'),
+       url('/src/assets/fonts/ClashDisplay-Light.woff') format('woff'),
+       url('/src/assets/fonts/ClashDisplay-Light.ttf') format('truetype');
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/src/assets/fonts/ClashDisplay-Regular.woff2') format('woff2'),
+       url('/src/assets/fonts/ClashDisplay-Regular.woff') format('woff'),
+       url('/src/assets/fonts/ClashDisplay-Regular.ttf') format('truetype');
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/src/assets/fonts/ClashDisplay-Medium.woff2') format('woff2'),
+       url('/src/assets/fonts/ClashDisplay-Medium.woff') format('woff'),
+       url('/src/assets/fonts/ClashDisplay-Medium.ttf') format('truetype');
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/src/assets/fonts/ClashDisplay-Semibold.woff2') format('woff2'),
+       url('/src/assets/fonts/ClashDisplay-Semibold.woff') format('woff'),
+       url('/src/assets/fonts/ClashDisplay-Semibold.ttf') format('truetype');
+  font-weight: 600; /* SemiBold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/src/assets/fonts/ClashDisplay-Bold.woff2') format('woff2'),
+       url('/src/assets/fonts/ClashDisplay-Bold.woff') format('woff'),
+       url('/src/assets/fonts/ClashDisplay-Bold.ttf') format('truetype');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/src/assets/fonts/ClashDisplay-Variable.woff2') format('woff2'),
+       url('/src/assets/fonts/ClashDisplay-Variable.woff') format('woff'),
+       url('/src/assets/fonts/ClashDisplay-Variable.ttf') format('truetype');
+  font-weight: 100 900; /* Variable font */
+  font-style: normal;
+}
+
+/* Style for the header */
+header {
+  background-image: url('/src/assets/images/background.webp');
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+header .header_top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+header .header_top .logo{
+  display: flex;
+  align-items: center;
+  font-family: 'ClashDisplay', sans-serif;
+  font-size: 24px;
+  font-weight: 700; /* Bold */
+  color: #fff;
+}
+
+header .header_top .menu .menu_list li{
+  margin: 0 15px;
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+  font-family: 'ClashDisplay', sans-serif;
+  font-weight: 400; /* Regular */
+}
+header .header_top .header_button {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-family: 'ClashDisplay', sans-serif;
+  font-size: 24px; /* Increased font size */
+  font-weight: 400; /* Regular */
+  border-radius: 15px; /* Added rounded corners */
+  padding: 10px 20px; /* Added padding for better appearance */
+}
+
+header .header_middle {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+header .header_middle .profil img {
+  width: 100px; /* Set the size of the profile image */
+  height: 100px; /* Ensure the image is a square */
+  border-radius: 50%; /* Make the image round */
+  object-fit: cover; /* Ensure the image fits within the circle */
+  margin-top: 10px; /* Add some spacing above the image */
+}
+header .header_middle .header_title {
+  text-align: center; /* Center the text */
+  color: white; /* Set the text color to white */
+  font-family: 'ClashDisplay', sans-serif;
+  font-size: 76px; /* Adjust font size as needed */
+  font-weight: 500; /* Medium */
+  margin-top: 20px; /* Add spacing above the title */
+  line-height: 1; /* Improve readability */
+}
+header .header_middle .header_description {
+  text-align: center; /* Center the text */
+  color: white; /* Set the text color to white */
+  font-family: 'ClashDisplay', sans-serif;
+  font-size: 18px; /* Adjust font size as needed */
+  font-weight: 400; /* Regular */
+  margin-top: 10px; /* Add spacing above the description */
+  line-height: 1.5; /* Improve readability */
+}
+header .header_middle .header_button {
+  background-color: blue; /* Set background color to blue */
+  color: white; /* Set text color to white */
+  border-radius: 15px; /* Add rounded corners */
+  padding: 10px 20px; /* Add padding for better appearance */
+  font-family: 'ClashDisplay', sans-serif;
+  font-size: 24px; /* Adjust font size */
+  font-weight: 400; /* Regular */
+  text-align: center; /* Center the text */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border: none; /* Remove border */
+}
+header .header_middle .View_all {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically */
+  justify-content: center; /* Center items horizontally */
+  text-align: center; /* Center the text */
+  color: white; /* Set the text color to white */
+  font-family: 'ClashDisplay', sans-serif;
+  font-size: 14px; /* Adjust font size as needed */
+  font-weight: 400; /* Regular */
+  margin-top: 20px; /* Add spacing above the text */
+  line-height: 1.5; /* Improve readability */
+}
+
+header .header_middle .View_all .text_bottom {
+  margin-right: 10px; /* Add spacing between the text and image */
+}
+
+header .header_middle .View_all .fleche {
+  width: 20px; /* Set the size of the image */
+  height: 20px; /* Ensure the image is a square */
+  object-fit: cover; /* Ensure the image fits within its dimensions */
+}
