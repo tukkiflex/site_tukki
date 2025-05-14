@@ -1,264 +1,259 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f7f7f7;
-  }
+/* === TYPOGRAPHIE GLOBALE === */
+body, h1, h2, h3, h4, h5, h6, h7, p, span, a, button, input, textarea, div {
+  font-family: 'Clash Display', sans-serif !important;
+  font-weight: 500;
   
-  .container {
-    padding: 2rem;
-  }
+}
+
+/* === Structure générale === */
+.container {
+  padding: 2rem;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.subtitle {
+  color: #0071E3;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro h1 {
+  font-size: 60px;
+  color: black;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+}
+
+/* === Texte secondaire + flèche === */
+.secondary-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 30px;
+  margin-left: 50px;
+  color: grey;
+}
+
+.secondary-text span {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondary-text p {
+  color: #0071E3;
+  margin-right: 10px;
+  text-align: right;
+}
+
+.secondary-text .arrow {
+  width: 20px;
+  height: 20px;
+  margin-right: auto;
+}
+
+/* === Slides / Sections === */
+.bus-app-section,
+.chauffeur-app-section,
+.compagnie-app-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5f5f7;
+  padding: 4rem 6rem;
+  border-radius: 60px;
+  width: 90%;
+  height: 400px;
+  overflow: hidden;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+/* === Contenu à gauche === */
+.content-left {
+  flex: 1;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap:6rem;
+}
+
+.high {
+  gap: 2rem;
+}
+
+.top-left {
+  font-size: 1rem;
+  color: #888;
+}
+
+.middle-left {
+  font-size: 2.2rem;
+  color: #111;
+  line-height: 1.2;
+}
+
+.demo-link,
+.bottom-left-link {
+  color: #0071E3;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+/* === Centre : Image === */
+.content-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.slide-image-app {
+  max-width: 500px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.slide-image-chauffeur,
+.slide-image-compagnie {
+  max-width: 100%;
+  height: 500px;
+  border-radius: 20px;
+}
+
+/* === Texte à droite ou bas === */
+.bottom-left-text {
+  font-size: 1rem;
+  color: #888;
+  margin-top: 20rem;
   
-  .intro {
+}
+
+
+.store-icon img,
+.store-icons img {
+  width: 42px;
+  height: 42px;
+  margin-bottom: 0.5rem;
+}
+
+/* === Slideur horizontal === */
+.slideur {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  gap: 3rem;
+  margin-left: 50px;
+  scrollbar-width: none;
+}
+
+.slideur::-webkit-scrollbar {
+  display: none;
+}
+
+.slideur > div {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+/* === Responsive : Tablette === */
+@media screen and (max-width: 1024px) {
+  .bus-app-section,
+  .chauffeur-app-section,
+  .compagnie-app-section {
+    flex-direction: column;
+    height: auto;
+    padding: 3rem 2rem;
+  }
+
+  .content-left {
+    max-width: 100%;
+    align-items: center;
     text-align: center;
-    margin-bottom: 3rem;
   }
-  
-  .subtitle {
-    color: blue;
-    font-size: 12px;
-    text-align: center;
+
+  .content-center {
+    position: static;
+    transform: none;
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
-    align-items: center;
   }
-  
-  .intro h1 {
-    font-size: 50px;
-    color: black;
+
+  .description,
+  .bottom-left-text {
+    position: static;
+    margin-top: 2rem;
+    max-width: 100%;
     text-align: center;
-    font-family: clashdisplay, sans-serif;
-    font-weight: 500;
+  }
+}
+
+/* === Responsive : Mobile === */
+@media screen and (max-width: 768px) {
+  .intro h1 {
+    font-size: 2rem;
   }
 
- 
-
-  .secondary-text {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    color: grey;
-    
-    margin-left: 50px;
-    margin-top: 30px;
-    font-family: clashdisplay, sans-serif;
-    font-weight: 500;
+  .middle-left {
+    font-size: 1.8rem;
   }
 
-  .secondary-text p {
-    color: blue;
-    margin-right: 0;
-    text-align: right;
-  }
-
-  .secondary-text .arrow {
-    width: 20px;
-    height: 20px;
-    margin-right: auto;
-  }
-  .bus-app-section {
-    position: relative;
-    width: 100%;
-    height: 600px; /* Ajuste la hauteur selon ton besoin */
-    background-image: url('/src/assets/images/slide1.png'); /* ton image de téléphones */
-
-    border-radius: 50px;
-    
-    overflow: hidden;
-    padding: 2rem;
-    color: #000;
-  }
-  
-  .bus-app-section .top-left {
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
-    font-weight: 400;
-    color: #666;
-    font-family: clashdisplay, sans-serif;
-    font-weight: 500;
-  }
-  
-  .bus-app-section .middle-left {
-    position: absolute;
-    top: 5rem;
-    left: 2rem;
-    font-size: 2.5rem;
-    max-width: 500px;
-    font-family: clashdisplay, sans-serif;  
-  font-weight: 500;
-  }
-  
-  
-  .bus-app-section .bottom-left-link {
-    position: absolute;
-    bottom: 4rem;
-    left: 2rem;
-    color: #007bff;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  .bus-app-section .bottom-left-text {
-    position: absolute;
-    bottom: 2rem;
-    right: 2rem;
-    max-width: 400px;
-  }
-  
-  .bus-app-section .bottom-left-text p {
-    margin-bottom: 1rem;
-    color: black;
-    font-family: clashdisplay, sans-serif;
-    font-weight: 500;
-  }
-  
-  .bus-app-section .bottom-left-text .store-icons {
-    display: flex;
-    gap: 2rem;
-  }
-  
-  .bus-app-section .bottom-left-text .store-icons img {
-    width: 40px;
-    height: auto;
-  }
-  
-  .chauffeur-app-section {
-    position: relative;
-    width: 100%;
-    height: 600px; /* Ajuste la hauteur selon ton besoin */
-    background-image: url('/src/assets/images/slide2.webp'); /* ton image de téléphones */
-
-    border-radius: 50px;
-    
-    overflow: hidden;
-    padding: 2rem;
-    color: #000;
-  }
-  
-  .chauffeur-app-section .top-left {
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
-    font-weight: 400;
-    color: #666;
-    font-family: clashdisplay, sans-serif;
-    font-weight: 500;
-  }
-  
-  .chauffeur-app-section .middle-left {
-    position: absolute;
-    top: 5rem;
-    left: 2rem;
-    font-size: 2.5rem;
-    max-width: 500px;
-    font-family: clashdisplay, sans-serif;  
-  font-weight: 500;
-  }
-  
-  
-  .chauffeur-app-section .bottom-left-link {
-    position: absolute;
-    bottom: 4rem;
-    left: 2rem;
-    color: #007bff;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  .chauffeur-app-section .bottom-left-text {
-    position: absolute;
-    bottom: 2rem;
-    right: 2rem;
-    max-width: 400px;
-  }
-  
-  .chauffeur-app-section .bottom-left-text p {
-    margin-bottom: 1rem;
-    color: black;
-    font-family: clashdisplay, sans-serif;
-    font-weight: 500;
-  }
-  
-  .chauffeur-app-section .bottom-left-text .store-icons {
-    display: flex;
-    gap: 2rem;
-  }
-  
-  .chauffeur-app-section .bottom-left-text .store-icons img {
-    width: 40px;
-    height: auto;
-  }
-  
+  .bus-app-section,
+  .chauffeur-app-section,
   .compagnie-app-section {
-    position: relative;
+    padding: 0 1rem;
+    height: auto;
     width: 100%;
-    height: 600px; /* Ajuste la hauteur selon ton besoin */
-    background-image: url('/src/assets/images/slide3.webp'); /* ton image de téléphones */
+    margin: 0;
+  }
 
-    border-radius: 50px;
-    
-    overflow: hidden;
-    padding: 2rem;
-    color: #000;
+  .slide-image,
+  .main-image {
+    width: 100%;
   }
-  
-  .compagnie-app-section .top-left {
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
-    font-weight: 400;
-    color: #666;
-    font-family: clashdisplay, sans-serif;
-    font-weight: 500;
+
+  .demo-link,
+  .bottom-left-link {
+    font-size: 0.9rem;
   }
-  
-  .compagnie-app-section .middle-left {
-    position: absolute;
-    top: 5rem;
-    left: 2rem;
-    font-size: 2.5rem;
-    max-width: 500px;
-    font-family: clashdisplay, sans-serif;  
-  font-weight: 500;
-  }
-  
-  
-  .compagnie-app-section .bottom-left-link {
-    position: absolute;
-    bottom: 4rem;
-    left: 2rem;
-    color: #007bff;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  .compagnie-app-section .bottom-left-text {
-    position: absolute;
-    bottom: 2rem;
-    right: 2rem;
-    max-width: 400px;
-  }
-  
-  .compagnie-app-section .bottom-left-text p {
-    margin-bottom: 1rem;
-    color: black;
-    font-family: clashdisplay, sans-serif;
-    font-weight: 500;
-  }
-  
-  .slideur {
-    display: flex;
-    flex-direction: row;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
+
+  .content-left {
     gap: 1rem;
-    margin-left: 50px;
-    scrollbar-width: none; /* For Firefox */
   }
 
-  .slideur::-webkit-scrollbar {
-    display: none; /* For Chrome, Safari, and Edge */
+  .secondary-text .arrow,
+  .secondary-text p {
+    display: none;
+  }
+
+  .secondary-text span {
+    font-size: 12px;
+    color: blue;
+    margin: 0;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .slideur {
+    margin-left: 0;
+    width: 100%;
   }
 
   .slideur > div {
-    flex: 0 0 auto;
-    scroll-snap-align: start;
+    flex: 0 0 100%;
   }
+}

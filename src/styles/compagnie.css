@@ -1,0 +1,236 @@
+/* -----------------------------------
+   FONTE GLOBALE
+----------------------------------- */
+body, h1, h2, h3, h4, h5, h6, p, span, a, button, input, textarea {
+  font-family: 'Clash Display', sans-serif !important;
+}
+
+/* -----------------------------------
+   BASE STYLES - Mise en page générale
+----------------------------------- */
+.driver-app-wrapper {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Bouton top de réservation de démo */
+.demo-button-top-compagnie {
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border: none;
+  text-decoration: none;
+}
+
+.demo {
+  text-decoration: none;
+  color: white;
+}
+
+/* Styles généraux */
+.highlight-yellow {
+  color: #FFE15A;
+}
+
+
+/* -----------------------------------
+   TITRE ET INTRODUCTION
+----------------------------------- */
+.driver-hero-title {
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 1.0;
+  margin-bottom: 30px;
+}
+
+.driver-intro {
+  max-width: 700px;
+  margin: 0 auto 60px auto;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ccc;
+  font-weight: 400;
+}
+
+/* -----------------------------------
+   BANDEAU CONDUCTEUR
+----------------------------------- */
+.driver-phone-strip {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.driver-phone-strip img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+/* -----------------------------------
+   SECTION COCKPIT (Header + Carrousel)
+----------------------------------- */
+.cockpit-header-compagnie {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Ensure proper spacing between h2 and button */
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+  color: black;
+  position: relative;
+  padding: 70px;
+}
+
+.cockpit-header-compagnie h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.demo-button-compagnie {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #007aff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 9999px;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.demo-button-compagnie:hover {
+  background-color: #005ecc;
+}
+
+/* -----------------------------------
+   CARROUSEL DES FONCTIONNALITÉS
+----------------------------------- */
+.feature-compagnie h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.feature-content-compagnie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-arrow-compagnie {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.dashboard-img-compagnie {
+  max-width: 500px;
+  margin-top: 80px;
+  margin-right: 80px;
+  margin-left: 80px;
+  transition: opacity 0.5s ease;
+}
+
+.feature-description-compagnie {
+  margin-top: 20px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ccc;
+}
+
+/* -----------------------------------
+   RESPONSIVE - Tablettes ≤768px
+----------------------------------- */
+@media screen and (max-width: 768px) {
+  .driver-hero-title {
+    font-size: 2.2rem;
+  }
+
+  .driver-phone-strip {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .driver-phone-strip img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .cockpit-header-compagnie h2 {
+    font-size: 1.6rem;
+  }
+
+  .feature-compagnie h3 {
+    font-size: 1rem;
+  }
+
+  .dashboard-img-compagnie {
+    max-width: 90%;
+  }
+
+  .feature-description-compagnie {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+}
+
+/* -----------------------------------
+   RESPONSIVE - Mobiles ≤480px
+----------------------------------- */
+@media screen and (max-width: 480px) {
+  .driver-app-wrapper {
+    padding: 30px 10px;
+  }
+
+  .driver-hero-title {
+    font-size: 1.8rem;
+  }
+
+  .demo-button-top-compagnie,
+  .cockpit-header-compagnie .demo-button-compagnie {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .cockpit-header-compagnie .demo-button-compagnie {
+    position: static;
+    transform: none;
+    margin-top: 10px;
+  }
+
+  .driver-phone-strip img {
+    width: 100%;
+  }
+
+  .feature-compagnie h3 {
+    font-size: 0.9rem;
+  }
+
+  .nav-arrow-compagnie {
+    font-size: 1.5rem;
+  }
+
+  .feature-description-compagnie {
+    font-size: 0.85rem;
+    padding: 0 10px;
+  }
+
+  .cockpit-header-compagnie h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}

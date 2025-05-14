@@ -1,0 +1,243 @@
+/* ==============================
+   Footer Section Styling
+   ============================== */
+
+/* =========================================
+   Global Typography Reset for Footer Zones
+   ========================================= */
+.footer-wrapper,
+.footer-main,
+.footer-bottom,
+.team-section,
+.faq-section {
+  font-family: 'Clash Display', sans-serif !important;
+  font-weight: 500;
+}
+
+
+/* Wrapper principal du footer */
+.footer-wrapper {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+/* Header du footer */
+.footer-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Liens dans la section 'View Solutions' */
+.view-solutions a {
+    text-transform: uppercase;
+    color:  #0071E3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ==============================
+   Team Section Styling
+   ============================== */
+
+/* Introduction de l'équipe */
+.team-intro h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.team-intro p {
+    color: black;
+    max-width: 700px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+}
+
+/* Section contenant les membres de l'équipe */
+.team-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+/* Cartes de chaque membre de l'équipe */
+.team-member {
+    text-align: center;
+    width: 320px;
+    padding: 20px;
+ 
+}
+
+/* Effet de survol pour les membres */
+.team-member:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Image du membre de l'équipe */
+.team-member img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+/* Nom du membre de l'équipe */
+.team-member h3 {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: black;
+    text-transform: capitalize;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 0; /* Ensures no extra spacing */
+}
+
+/* ==============================
+   FAQ Section Styling
+   ============================== */
+
+/* Titre de la section FAQ */
+.faq-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Section contenant les items FAQ */
+.faq-section {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+}
+
+/* Style des titres de chaque question dans la FAQ */
+.faq-item h2 {
+    font-size: 1.2rem;
+    color: black;
+    margin-top: 25px;
+}
+
+/* Contenu des réponses de la FAQ */
+.faq-item p {
+    color: #333;
+    line-height: 1.8;
+}
+
+/* ==============================
+   Footer Principal Styling
+   ============================== */
+
+/* Footer principal contenant plusieurs colonnes */
+.footer-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    background-color: white;
+    padding: 40px 20px;
+  
+}
+
+/* Colonnes du footer */
+.footer-col {
+    flex: 1 1 220px;
+    min-width: 220px;
+}
+
+/* Logo dans le footer */
+.footer-logo img {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+/* Description dans le footer */
+.description {
+    font-size: 0.95rem;
+    color: black;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Titre des sections dans le footer */
+.section-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 15px;
+}
+
+/* Informations de contact dans le footer */
+.contact-info p {
+    margin: 4px 0;
+    color:   #0071E3;
+}
+
+/* Liste des liens dans le footer */
+.link-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: black;
+    font-size: 0.95rem;
+}
+
+/* Lorsque les liens doivent être en ligne (ex: sur grand écran) */
+.link-list.row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+/* Style des liens du footer */
+.link-list a{
+    cursor: pointer;
+    color: black;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+/* Effet de survol sur les liens */
+.link-list span:hover {
+    color: black;
+}
+
+/* Image additionnelle dans le footer */
+.driver-footer-image {
+    width: 700px;
+    margin: 0 auto;
+    border-radius: 16px;
+    transition: transform 0.3s ease;
+}
+
+/* ==============================
+   Footer Bottom Styling
+   ============================== */
+
+/* Bas du footer, contenant les informations supplémentaires */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px ;
+
+}
+
+/* Flèche de gauche dans le bas du footer */
+.footer-bottom .left-arrow {
+    margin-top: 80px;
+}
+
+/* Logo dans la partie inférieure du footer */
+.footer-bottom .bottom-logo {
+    width: 80%;
+    margin: 0;
+}

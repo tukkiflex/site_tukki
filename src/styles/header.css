@@ -1,173 +1,225 @@
-@font-face {
-  font-family: 'ClashDisplay';
-  src: url('/src/assets/fonts/ClashDisplay-Extralight.woff2') format('woff2'),
-       url('/src/assets/fonts/ClashDisplay-Extralight.woff') format('woff'),
-       url('/src/assets/fonts/ClashDisplay-Extralight.ttf') format('truetype');
-  font-weight: 200; /* ExtraLight */
-  font-style: normal;
+/* ===== BASE STYLES GLOBALES ===== */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-@font-face {
-  font-family: 'ClashDisplay';
-  src: url('/src/assets/fonts/ClashDisplay-Light.woff2') format('woff2'),
-       url('/src/assets/fonts/ClashDisplay-Light.woff') format('woff'),
-       url('/src/assets/fonts/ClashDisplay-Light.ttf') format('truetype');
-  font-weight: 300; /* Light */
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'ClashDisplay';
-  src: url('/src/assets/fonts/ClashDisplay-Regular.woff2') format('woff2'),
-       url('/src/assets/fonts/ClashDisplay-Regular.woff') format('woff'),
-       url('/src/assets/fonts/ClashDisplay-Regular.ttf') format('truetype');
-  font-weight: 400; /* Regular */
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'ClashDisplay';
-  src: url('/src/assets/fonts/ClashDisplay-Medium.woff2') format('woff2'),
-       url('/src/assets/fonts/ClashDisplay-Medium.woff') format('woff'),
-       url('/src/assets/fonts/ClashDisplay-Medium.ttf') format('truetype');
-  font-weight: 500; /* Medium */
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'ClashDisplay';
-  src: url('/src/assets/fonts/ClashDisplay-Semibold.woff2') format('woff2'),
-       url('/src/assets/fonts/ClashDisplay-Semibold.woff') format('woff'),
-       url('/src/assets/fonts/ClashDisplay-Semibold.ttf') format('truetype');
-  font-weight: 600; /* SemiBold */
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'ClashDisplay';
-  src: url('/src/assets/fonts/ClashDisplay-Bold.woff2') format('woff2'),
-       url('/src/assets/fonts/ClashDisplay-Bold.woff') format('woff'),
-       url('/src/assets/fonts/ClashDisplay-Bold.ttf') format('truetype');
-  font-weight: 700; /* Bold */
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'ClashDisplay';
-  src: url('/src/assets/fonts/ClashDisplay-Variable.woff2') format('woff2'),
-       url('/src/assets/fonts/ClashDisplay-Variable.woff') format('woff'),
-       url('/src/assets/fonts/ClashDisplay-Variable.ttf') format('truetype');
-  font-weight: 100 900; /* Variable font */
-  font-style: normal;
-}
-
-/* Style for the header */
 header {
+  font-family: 'Clash Display', sans-serif;
+  font-weight: 500;
   background-image: url('/src/assets/images/background.webp');
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  width: 100%;
+  height: 100vh;
+  padding: 20px 0;
+  box-sizing: border-box;
+  
 }
 
-header .header_top{
+/* ===== SECTION: Top du header (Logo, Menu, Bouton) ===== */
+.header_top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  gap: 10px;
+  width: 100%;
 }
 
-header .header_top .logo{
+.header_logo {
+  width: auto;
+  height: 40px;
+  margin-left: 25px;
+}
+
+.menu_list {
   display: flex;
-  align-items: center;
-  font-family: 'ClashDisplay', sans-serif;
-  font-size: 24px;
-  font-weight: 700; /* Bold */
-  color: #fff;
+  list-style: none;
 }
 
-header .header_top .menu .menu_list li{
-  margin: 0 15px;
-  color: white;
-  font-size: 20px;
-  display: inline-block;
-  font-family: 'ClashDisplay', sans-serif;
-  font-weight: 400; /* Regular */
+.menu_item {
+  margin: 0 20px;
 }
-header .header_top .header_button {
+
+.menu_item a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.header_button {
   display: flex;
   align-items: center;
   background-color: black;
   color: white;
-  font-family: 'ClashDisplay', sans-serif;
-  font-size: 24px; /* Increased font size */
-  font-weight: 400; /* Regular */
-  border-radius: 15px; /* Added rounded corners */
-  padding: 10px 20px; /* Added padding for better appearance */
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 50px;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-right: 15px;
 }
 
-header .header_middle {
+/* ===== SECTION: Partie centrale du header (Profil, Titre, Description) ===== */
+.header_middle {
   display: flex;
-  flex-direction: column; /* Align items vertically */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
+  padding: 40px 20px;
+  text-align: center;
 }
 
-header .header_middle .profil img {
-  width: 100px; /* Set the size of the profile image */
-  height: 100px; /* Ensure the image is a square */
-  border-radius: 50%; /* Make the image round */
-  object-fit: cover; /* Ensure the image fits within the circle */
-  margin-top: 10px; /* Add some spacing above the image */
-}
-header .header_middle .header_title {
-  text-align: center; /* Center the text */
-  color: white; /* Set the text color to white */
-  font-family: 'ClashDisplay', sans-serif;
-  font-size: 76px; /* Adjust font size as needed */
-  font-weight: 500; /* Medium */
-  margin-top: 20px; /* Add spacing above the title */
-  line-height: 1; /* Improve readability */
-}
-header .header_middle .header_description {
-  text-align: center; /* Center the text */
-  color: white; /* Set the text color to white */
-  font-family: 'ClashDisplay', sans-serif;
-  font-size: 18px; /* Adjust font size as needed */
-  font-weight: 400; /* Regular */
-  margin-top: 10px; /* Add spacing above the description */
-  line-height: 1.5; /* Improve readability */
-}
-header .header_middle .header_button {
-  background-color: blue; /* Set background color to blue */
-  color: white; /* Set text color to white */
-  border-radius: 15px; /* Add rounded corners */
-  padding: 10px 20px; /* Add padding for better appearance */
-  font-family: 'ClashDisplay', sans-serif;
-  font-size: 24px; /* Adjust font size */
-  font-weight: 400; /* Regular */
-  text-align: center; /* Center the text */
-  cursor: pointer; /* Change cursor to pointer on hover */
-  border: none; /* Remove border */
-}
-header .header_middle .View_all {
-  display: flex; /* Use flexbox for layout */
-  align-items: center; /* Align items vertically */
-  justify-content: center; /* Center items horizontally */
-  text-align: center; /* Center the text */
-  color: white; /* Set the text color to white */
-  font-family: 'ClashDisplay', sans-serif;
-  font-size: 14px; /* Adjust font size as needed */
-  font-weight: 400; /* Regular */
-  margin-top: 20px; /* Add spacing above the text */
-  line-height: 1.5; /* Improve readability */
+.profil img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 10px;
 }
 
-header .header_middle .View_all .text_bottom {
-  margin-right: 10px; /* Add spacing between the text and image */
+.header_title {
+  color: white;
+  font-size: 76px;
+  font-weight: 500;
+  margin-top: 20px;
+  line-height: 1;
 }
 
-header .header_middle .View_all .fleche {
-  width: 20px; /* Set the size of the image */
-  height: 20px; /* Ensure the image is a square */
-  object-fit: cover; /* Ensure the image fits within its dimensions */
+.header_description {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.header_middle .header_middle_button {
+  background-color: #0071E3;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 20px 30px;
+  border-radius: 50px;
+}
+.header_middle .header_middle_button {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* ===== SECTION: Découverte solutions (Texte + flèche) ===== */
+.View_all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+.text_haut {
+  margin-right: 10px;
+}
+
+.fle {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+
+}
+
+/* ===== HAMBURGER ICON ===== */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* ===== RESPONSIVE TABLET (max-width: 850px) ===== */
+@media screen and (max-width: 850px) {
+  .header{
+    height: 100vh;
+    width:100%;
+  }
+  .header_logo {
+    width: auto;
+    height: 40px;
+    margin-left: 25px;
+  }
+  .header_top {
+    gap:5px;
+  }
+  .header_button {
+    display: none;
+  }
+
+  .menu_item a {
+    font-size: 15px;
+  }
+  .header_title {
+    font-size: 30px;
+  }
+  .header_middle_button {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+  }
+}
+
+/* ===== RESPONSIVE MOBILE (max-width: 768px) ===== */
+@media screen and (max-width: 468px) {
+  .header_top {
+    padding: 20px;
+  }
+
+  .header_title {
+    font-size: 36px;
+  }
+
+  .header_description {
+    font-size: 12px;
+  }
+
+  .header_middle .header_button {
+    font-size: 14px;
+  }
+
+  /* Menu mobile */
+  .menu_list {
+    display: none;
+    flex-direction: column;
+    background-color: black;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 200px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .menu_list.open {
+    display: flex;
+  }
+
+  .menu_item {
+    padding: 10px 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .header_button {
+    display: none;
+  }
 }
