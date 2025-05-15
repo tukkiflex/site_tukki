@@ -50,7 +50,9 @@ npm run build
 ```
 
 ## Auteur
-- [Tukki Flex](https://github.com/tukkiflex)
+- MAMADOU SECK
+- KHADIM GNIGUE
+- BOUBACAR NIANG
 
 ---
 
