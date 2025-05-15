@@ -1,12 +1,57 @@
-# React + Vite
+# Tukki Flex - Site Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ce projet est un site vitrine développé avec React et Vite pour la compagnie Tukki Flex.
 
-Currently, two official plugins are available:
+## Fonctionnalités principales
+- Présentation de la solution Tukki Flex
+- Sections : Fonctionnalités, Utilisateurs, Compagnies, Dashboard, Footer
+- Design responsive et animations modernes
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Prérequis
+- Node.js (version 16 ou supérieure recommandée)
+- npm (généralement installé avec Node.js)
 
-## Expanding the ESLint configuration
+## Installation
+1. Clonez le dépôt :
+   ```bash
+   git clone https://github.com/tukkiflex/site_tukki.git
+   ```
+2. Accédez au dossier du projet :
+   ```bash
+   cd site_tukki
+   ```
+3. Installez les dépendances :
+   ```bash
+   npm install
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Lancer le projet en développement
+Pour démarrer le serveur de développement et ouvrir le site sur [http://localhost:5173](http://localhost:5173) :
+
+```bash
+npm run dev
+```
+
+## Structure du projet
+- `src/components/` : Composants React (header, footer, etc.)
+- `src/assets/` : Images et polices
+- `src/styles/` : Fichiers CSS
+- `src/App.jsx` : Point d'entrée principal de l'application
+
+## Personnalisation
+- Modifiez les images dans `src/assets/images/`
+- Modifiez les polices dans `src/assets/fonts/`
+- Modifiez les styles dans `src/styles/`
+
+## Déploiement
+Pour construire le projet pour la production :
+```bash
+npm run build
+```
+
+## Auteur
+- [Tukki Flex](https://github.com/tukkiflex)
+
+---
+
+Pour toute question, contactez l'équipe Tukki Flex.
