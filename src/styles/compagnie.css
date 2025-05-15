@@ -155,10 +155,19 @@ body, h1, h2, h3, h4, h5, h6, p, span, a, button, input, textarea {
 /* -----------------------------------
    RESPONSIVE - Tablettes ≤768px
 ----------------------------------- */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
   .driver-hero-title {
     font-size: 2.2rem;
   }
+  .nav-arrow-compagnie {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
 
   .driver-phone-strip {
     flex-direction: column;
@@ -166,7 +175,7 @@ body, h1, h2, h3, h4, h5, h6, p, span, a, button, input, textarea {
   }
 
   .driver-phone-strip img {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -179,7 +188,7 @@ body, h1, h2, h3, h4, h5, h6, p, span, a, button, input, textarea {
   }
 
   .dashboard-img-compagnie {
-    max-width: 90%;
+    max-width: 60%;
   }
 
   .feature-description-compagnie {
@@ -199,7 +208,10 @@ body, h1, h2, h3, h4, h5, h6, p, span, a, button, input, textarea {
   .driver-hero-title {
     font-size: 1.8rem;
   }
-
+  .cockpit-header-compagnie{
+    flex-direction: column;
+    gap: 5px;
+  }
   .demo-button-top-compagnie,
   .cockpit-header-compagnie .demo-button-compagnie {
     padding: 8px 16px;
@@ -214,14 +226,34 @@ body, h1, h2, h3, h4, h5, h6, p, span, a, button, input, textarea {
 
   .driver-phone-strip img {
     width: 100%;
+
   }
 
   .feature-compagnie h3 {
     font-size: 0.9rem;
   }
 
+  .feature-content-compagnie {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dashboard-img-compagnie {
+    margin-top: 40px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
   .nav-arrow-compagnie {
     font-size: 1.5rem;
+    margin: 10px 5px 0 5px;
+  }
+
+  .feature-arrows-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
   }
 
   .feature-description-compagnie {

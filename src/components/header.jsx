@@ -9,7 +9,7 @@ const HeaderView = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header id ="header" >
+    <header id="header">
       {/* Section Header Top: Logo et Menu */}
       <div className="header_top">
         {/* Logo du site */}
@@ -51,14 +51,12 @@ const HeaderView = () => {
       {/* Section Header Middle: Profil et message principal */}
       <div className="header_middle">
         {/* Image de profil */}
-  
 
         {/* Titre principal */}
         <h1 className="header_title">
           Propulsez votre compagnie <br />
-         de transport dans <br />
-         l'ère digitale.
-         
+          de transport dans <br />
+          l'ère digitale.
         </h1>
 
         {/* Description de la solution */}
@@ -79,7 +77,9 @@ const HeaderView = () => {
         <div className="View_all">
           <p className="text_haut">Découvrez nos solutions</p>
           {/* Icône de flèche */}
-          <img href="#fonctionnalite"src={fleche} alt="Fleche bas" className="fle" />
+          <a href="#fonctionnalite">
+            <img src={fleche} alt="Fleche bas" className="fle" />
+          </a>
         </div>
       </div>
     </header>

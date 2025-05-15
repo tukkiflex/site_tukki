@@ -2,9 +2,14 @@ import React from 'react';
 import '/src/styles/footer.css';
 
 import malick from '/src/assets/images/malick.jpg';
+import khadim from '/src/assets/images/khadim.jpg';
+import boubacar from '/src/assets/images/boubacar.jpg';
+import lamotte from '/src/assets/images/lamotte.jpg';
+import mamadou from '/src/assets/images/mamadou.jpg';
+import kamal from '/src/assets/images/kamal.jpg';
 import logo from '/src/assets/images/Tukki_logo-black.png';
 import smallLogo from '/src/assets/images/Tukki_logo-black.png';
-import arrowIcon from '/src/assets/images/Arrow_up.png';
+
 
 const FooterView = () => {
   return (
@@ -12,38 +17,35 @@ const FooterView = () => {
     <div className="footer-wrapper">
 
     {/* === Section Header avec lien et équipe === */}
-      <section className="footer-header" id="equipe">
-        <div className="view-solutions">
-          <a href="#fonctionnalite">Découvrez toutes nos solutions</a>
-        </div>
+    <section className="footer-header" id="equipe">
+      <div className="view-solutions">
+        <a href="#fonctionnalite">Découvrez toutes nos solutions</a>
+      </div>
 
-        <div className="team-intro">
-          <h2>Notre équipe d'expert</h2>
-          <p>
-       Nous sommes une équipe dédiée à transformer le secteur des transports grâce à des solutions innovantes et adaptées à vos besoins.
-          </p>
-        </div>
+      <div className="team-intro">
+        <h2>Notre équipe d'expert</h2>
+        <p>
+          Nous sommes une équipe dédiée à transformer le secteur des transports grâce à des solutions innovantes et adaptées à vos besoins.
+        </p>
+      </div>
 
-        <div className="team-section">
-          {[
-        { name: "Malick GUEYE" },
-        { name: "Moussa Kamal MOUSTOIFA BEN" },
-        { name: "Khadim GNIGUE" },
-        { name: "Issa SECK" },
-        { name: "Moustapha CAMARA " },
-        { name: "Mouhamed LAMOTTE " },
-        { name: "Boubacar NIANG" },
-        { name: "Mamadou SECK" },
-          ].map((member, i) => (
-        <div className="team-member" key={i}>
-          <img src={malick} alt="Team member" />
-          <h3>{member.name}</h3>
-        </div>
-          ))}
-        </div>
-      </section>
-
-      {/* === Section FAQ === */}
+      <div className="team-section">
+        {[
+          { name: "Malick GUEYE", img: malick },
+          { name: "Mamadou SECK", img: mamadou },
+          { name: "Kamal Moussa MOUSTOIFA BEN", img: kamal },
+          { name: "Khadim Gnigue", img: khadim },
+          { name: "Mouhamed LAMOTTE", img: lamotte },
+          { name: "Boubacar NIANG", img: boubacar },
+         
+        ].map((member, i) => (
+          <div className="team-member" key={i}>
+            <img src={member.img} alt={member.name} />
+            <h3>{member.name}</h3>
+          </div>
+        ))}
+      </div>
+    </section>
       <h1 className="faq-title">FAQ</h1>
 
       <section className="faq-section" id ="faq">
@@ -125,10 +127,13 @@ const FooterView = () => {
         {/* === Logo + flèche bas de page === */}
       <div className="footer-bottom">
         <img src={smallLogo} alt="Small-Logo" className="bottom-logo" />
-        <a href="#header">
-          <img src={arrowIcon} alt="Flèche vers le haut" className="left-arrow" />
-        </a>
+       
+        
       </div>
+      <span className="copyright">
+          Copyright © 2025 ID—C&nbsp;&nbsp;|&nbsp;&nbsp;Hugo
+        
+        </span>
     </div>
   
   );
